@@ -1,0 +1,26 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="rga.contact.application.edit.EditContactFragment">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <include layout="@layout/layout_imagem"/>
+
+        <include layout="@layout/layout_editable_name_field"/>
+
+
+        <include layout="@layout/layout_contact_detail_card_view"/>
+        <include layout="@layout/layout_about_card_view"/>
+
+
+    </LinearLayout>
+</ScrollView>

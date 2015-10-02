@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Contacts</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_message">Loading</string>
+    <string name="title_activity_edit_contact">EditContactActivity</string>
+
+    <string name="name">Jefferson</string>
+    <string name="email">Jefferson.almeida.comp@gmail.com</string>
+    <string name="born">born</string>
+    <string name="bio">bio</string>
+    <string name="updated">Contact Updated</string>
+    <string name="title_activity_show_contact">ShowContact</string>
+    <string name="title_activity_create">CreateActivity</string>
+
+
+    <string name="email_hint">Email</string>
+    <string name="birthday_hint">Birthday</string>
+
+    <string name="email_test">jefferson.almeida.comp@gmail.com</string>
+    <string name="birthday_test">September 30</string>
+    <string name="bio_description_test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget urna a quam porta imperdiet. Nullam et tortor risus. Ut blandit massa convallis ligula aliquam hendrerit. Ut sodales sem non arcu facilisis, vehicula semper ante tristique. Phasellus quis ex sit amet nulla sagittis blandit et in tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet imperdiet enim ac dictum.</string>
+    <string name="bio_hint">Describe Yourself</string>
+    <string name="name_hint">Name</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_margin_left"
+    android:layout_marginRight="@dimen/card_view_margin_right"
+    android:layout_marginBottom="15dp"
+    card_view:cardCornerRadius="@dimen/card_view_cardCornerRadius"       >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/about_field_height"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/padding_left_about_card"
+            android:layout_gravity="center"
+            android:text="About Jefferson Almeida"
+            android:textSize="@dimen/textSize_contact_item"
+            android:textColor="@color/orange"
+            />
+
+        <View
+            android:id="@+id/title_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_separator_height"
+            android:layout_below="@+id/about"
+            android:background="@color/orange_light"/>
+
+        <EditText
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/bio_hint"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/padding_top_bio_description"
+            android:paddingLeft="@dimen/padding_left_bio_description"
+            android:paddingRight="@dimen/padding_right_bio_description"
+            android:paddingBottom="@dimen/padding_bottom_bio_description"
+            android:layout_gravity="center"
+            android:text="@string/bio_description_test"
+            android:layout_below="@+id/title_separator"
+            android:textSize="@dimen/textSize_contact_item"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

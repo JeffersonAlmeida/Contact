@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="rga.contact">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_orange"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+        >
+        <activity
+            android:name=".application.list.ContactsListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".application.edit.EditContactActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".application.list.ContactsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.list.ContactsListActivity" />
+        </activity>
+        <activity
+            android:name=".application.show.ShowContactActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".application.list.ContactsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.list.ContactsListActivity" />
+        </activity>
+        <activity
+            android:name=".application.create.CreateActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/app_name"
+            android:parentActivityName=".application.list.ContactsListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.list.ContactsListActivity" />
+        </activity>
+
+        <activity android:name=".database.AndroidDatabaseManager"
+            android:theme="@style/Theme.AppCompat.Light"/>
+
+    </application>
+
+</manifest>

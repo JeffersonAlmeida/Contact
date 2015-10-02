@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="rga.contact.application.show.ShowContactActivity">
+
+    <item android:id="@+id/action_favorite"
+        android:title="Favorite"
+        android:icon="@drawable/ic_action_favorite_border"
+        app:showAsAction="always"  />
+
+    <item android:id="@+id/action_edit"
+        android:title="Edit"
+        android:icon="@drawable/ic_action_create"
+        app:showAsAction="always"  />
+
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        android:icon="@drawable/ic_action_delete"
+        app:showAsAction="always"  />
+
+</menu>
