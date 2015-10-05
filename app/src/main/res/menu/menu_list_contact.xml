@@ -7,10 +7,4 @@
         android:icon="@drawable/ic_action_person_add"
         app:showAsAction="always"  />
 
-
-    <item android:id="@+id/action_Database"
-        android:title="Database"
-        android:icon="@drawable/ic_action_delete"
-        app:showAsAction="always"  />
-
 </menu>

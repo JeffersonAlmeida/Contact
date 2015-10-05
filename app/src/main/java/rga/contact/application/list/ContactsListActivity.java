@@ -17,7 +17,6 @@ import rga.contact.R;
 import rga.contact.application.create.CreateActivity;
 import rga.contact.application.edit.EditContactActivity;
 import rga.contact.application.show.ShowContactActivity;
-import rga.contact.database.AndroidDatabaseManager;
 import rga.contact.database.ContactDao;
 import rga.contact.database.DataBase;
 import rga.contact.json.FromJson;
@@ -77,17 +76,9 @@ extends ActionBarActivity implements ContactListFragment.OnClickContactListener,
             case R.id.action_create:
                 createContact();
                 return true;
-            case R.id.action_Database:
-                showDatabase();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    private void showDatabase() {
-        Intent dbmanager = new Intent(this,AndroidDatabaseManager.class);
-        startActivity(dbmanager);
     }
 
     private void createContact() {
